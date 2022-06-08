@@ -1,0 +1,41 @@
+:root {
+	--themeColor: #2c4f36;
+	--accentColor: #00ce43;
+	--errorColor: #dc3545;
+	--successColor: #28a745;
+	--warningColor: #ffc107;
+	--infoColor: #17a2b8;
+	--textColor: #000000;
+	--textAltColor: #ffffff;
+	--fadeColor: #666666;
+	--shadowColor: #999;
+	--bgColor: #ffffff;
+	--bgAltColor: #f5f5f5;
+	--lineColor: #dee2e6;
+	--hoverColor: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+	// :root {
+	// 	--themeColor: #00fff0; //1fe0ff;
+	// 	--errorColor: #dc3545;
+	// 	--successColor: #28a745;
+	// 	--warningColor: #ffc107;
+	// 	--infoColor: #17a2b8;
+	// 	--textColor: #ffffff;
+	// 	--textAltColor: #000000;
+	// 	--fadeColor: #8b8593;
+	// 	--shadowColor: #bbb;
+	// 	--bgColor: #2c2e3e;
+	// 	--bgAltColor: #111218;
+	// 	--lineColor: #dee2e6;
+	// 	--hoverColor: #00ffee3b;
+	// }
+}
+
+$max-w: 950px;
+$xl-w: 1150px;
+$lg-w: 1050px;
+$md-w: 950px;
+$sm-w: 700px;
+$xs-w: 600px;
