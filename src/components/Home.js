@@ -27,14 +27,14 @@ function Home() {
                {[
                   {
                      title: 'Permissionless, compliant, and one-of-its-kind',
-                     content: 'GRDCToken provides investors with a simple, intelligent, and user-friendly method to buy into fractional, tokenized properties, leveraging the U.S. legal system and the permissionless, unrestricted token issuance of Solana. Investing with GRDC means low maintenance property ownership, access to cash flows related to the property(e.g., rent), and frictionless ownership transactions via GRDCokens.',
+                     content: 'GRDC provides investors with a simple, intelligent, and user-friendly method to buy into fractional, tokenized properties, leveraging the U.S. legal system and the permissionless, unrestricted token issuance on Solana. Investing with GRDC means low maintenance property ownership, access to cash flows related to the property(e.g., rent), and frictionless ownership transactions via GRDC Coin. At GRDC we are reinventinting real estate ownership.',
                      img: 'bg_logo2.png',
                      link: { title: 'Learn More', url: '' }
                   },
                   {
-                     title: 'Fractional and frictionless real estate investing',
-                     sub_title: 'OWNERSHIP REINVENTED',
-                     content: 'For the first time, investors around the globe can buy into the US real estate market through fully-compliant, fractional, tokenized ownership. Powered by blockchain.',
+                     title: 'Decentralised Real Estate Investment Coin',
+                     sub_title: 'GRDC THE FUTURE!',
+                     content: 'How do you change the world?! By recycling 1 piece of garbage at a time! Or, in our instance recycling 1000’s of pounds of garbage annually! Green Real Estate Development Coin is building and developing a blueprint where apartment complexes will have zero garbage going to the landfills! 100% of the garbage is going to be recycled onsite! As an early Investor you can grab yourself a front row seat as this new concept unfolds and becomes a reality! You can own brand new crypto coins called GRDC at a fraction of what the ICO price will go for.',
                      img: 'bg_logo2.png',
                      link: { title: 'Contact Us', url: '' }
                   },
@@ -94,13 +94,13 @@ function Home() {
                   },
                   {
                      icon: 'llc-owned.png',
-                     title: 'INC/LLC Owned',
-                     content: 'Real estate can’t directly be tokenized, but legal entities can. Each property is owned by company (either an Inc or an LLC). Each company is tokenized as a unique set of GRDCTokens and made available for purchase. '
+                     title: 'LLC Owned',
+                     content: 'Real estate can’t directly be tokenized, but legal entities can. Each property is owned by company (either an Inc or an LLC). Each company is tokenized as a unique set of GRDC and made available for purchase. '
                   },
                   {
                      icon: 'payments.png',
-                     title: 'Weekly Rent Payments',
-                     content: 'With blockchains, we no longer need to wait 30 days to receive a bank transfer. Owning property with RealT allows you to collect rent every week. Rent is paid using a US-Dollar stablecoin, sent to your xDai or Ethereum wallet.'
+                     title: 'Instant Payments',
+                     content: 'With blockchains, we no longer need to wait 30 days to receive a bank transfer. Owning property with GRDC allows you to get and monitor you investment real-time. Dividends are paid using a US-Dollar stablecoin, sent to your wallet.'
                   },
                ].map((each, i) => <div className='each-desc' key={i}>
                   <img className='icon' src={each.icon} />
@@ -126,7 +126,7 @@ function Home() {
             <div className='inner'>
                <h1>Tokenizing Real Estate</h1>
                <h2>The future of real estate investing is fractional</h2>
-               <p>Tokenizing real estate has become the focus of many institutions in 2018, and is likely to continue into the future as Solana offers a way to add improved levels of liquidity (tokens) to a notoriously illiquid industry (real estate).</p>
+               <p>Tokenizing real estate has become the focus of many institutions in 2022, and is likely to continue into the future as Solana offers a way to add improved levels of liquidity (tokens) to a notoriously illiquid industry (real estate).</p>
                <p>Fractional ownership democratizes access to real estate investment, and therefore distributes and minimizes the risks and labor involved with owning property.  And RealToken makes it even simpler!</p>
                <Link className='link' to={''}>GET STARTED</Link>
             </div>
@@ -171,26 +171,26 @@ function Home() {
                      {
                         avatar: 'dale.jpeg',
                         name: 'Dale Willie',
-                        desc: 'Member of GRDC Team',
-                        position: 'Manager'
+                        desc: 'I’ve been in the real estate and construction worlds for over 22 years. My first construction job was to fire a General onsite and take over a job he wasn’t doing. That was 23 years ago! Since then I’ve built and invested into many different types of real estate deals. This is by far the best deal I’ve ever worked on. Building complexes where 100% of the garbage is recycled is going to be the best job I’ve ever accomplished. I am so excited about the future that I’ve invested the past couple years of my time and resources to seeing GRDC come to life. Join me into a new world using crypto to build a better place for everyone!',
+                        position: 'Chief Executive Officer'
                      },
                      {
                         avatar: 'edward.jpeg',
                         name: 'Edward Gentry',
                         desc: '',
-                        position: 'Manager'
+                        position: 'Finance Manager'
                      },
                      {
                         avatar: 'vinay.jpeg',
                         name: 'Vinay Phadnis',
                         desc: '',
-                        position: 'Dev Manager'
+                        position: 'Chief Technology Officer'
                      },
                      {
                         avatar: 'la.jpeg',
                         name: 'La Fountain',
                         desc: '',
-                        position: 'Manager'
+                        position: 'Project Manager'
                      }
                   ].map((member, i) => <div className='each-member' key={i}>
                      <div className='thumbnail' style={{ backgroundImage: `url(${member.avatar})` }}>
