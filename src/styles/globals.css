@@ -1105,6 +1105,7 @@ header .inner nav .nav-link.active {
   background-size: contain;
   background-attachment: scroll;
   background-repeat: no-repeat;
+  padding: 150px 0 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1617,6 +1618,7 @@ header .inner nav .nav-link.active {
 }
 
 .home-page .newsletter form input {
+  width: 0px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1686,5 +1688,102 @@ footer .content .links a {
 
 footer .content .links a:hover {
   color: var(--accentColor);
+}
+
+@media (max-width: 700px) {
+  header .inner nav {
+    display: none;
+  }
+  .home-page .f-intro .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-page .f-intro .links .each-link {
+    margin-bottom: 20px;
+  }
+  .home-page .intro-desc .inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .home-page .tok-intro .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home-page .tok-intro .inner .thumbnail {
+    width: 100%;
+    padding: 40% 0;
+  }
+  .home-page .learn-more .datas {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .home-page .our-team .members {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .home-page .our-team .members .each-member {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  .home-page .our-team .members .each-member .thumbnail {
+    background-size: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+  }
+  .home-page .our-team .members .each-member .thumbnail .resizer {
+    padding: 0;
+  }
+  .home-page .our-team .members .each-member h2,
+  .home-page .our-team .members .each-member p {
+    text-align: center;
+  }
+  footer .content {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=globals.css.map */

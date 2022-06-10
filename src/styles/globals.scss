@@ -112,6 +112,7 @@ header {
 				background-size: contain;
 				background-attachment: scroll;
 				background-repeat: no-repeat;
+				padding: 150px 0 20px 0;
 				@include flex(center, center, column);
 				.inner {
 					@include flex(flex-start, center, column);
@@ -424,6 +425,7 @@ header {
 			box-shadow: var(--shadowColor) 0 0 5px;
 			border-radius: 40px;
 			input {
+				width: 0px;
 				flex-grow: 1;
 				background-color: #ffffff;
 				height: 40px;
@@ -473,6 +475,85 @@ footer {
 					color: var(--accentColor);
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	header {
+		.inner {
+			nav {
+				display: none;
+			}
+		}
+	}
+	.home-page {
+		.f-intro {
+			.links {
+				@include flex(center, space-around, column);
+				.each-link {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		.intro-desc {
+			.inner {
+				grid-template-columns: 1fr;
+			}
+		}
+		.tok-intro {
+			.inner {
+				@include flex(center, center, column);
+				.thumbnail {
+					width: 100%;
+					padding: 40% 0;
+				}
+			}
+		}
+		.learn-more {
+			.datas {
+				grid-template-columns: 1fr;
+				grid-gap: 20px;
+			}
+		}
+		.our-team {
+			.members {
+				grid-template-columns: 1fr;
+				grid-gap: 20px;
+				.each-member {
+					@include flex(center, center, column);
+					padding-top: 20px;
+					.thumbnail {
+						background-size: 100px;
+						border-radius: 50%;
+						overflow: hidden;
+						height: 100px;
+						width: 100px;
+						.resizer {
+							padding: 0;
+						}
+					}
+					h2,
+					p {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		.content {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	footer {
+		.content {
+			//@include flex(center, center, column);
+			grid-template-columns: 1fr;
 		}
 	}
 }
